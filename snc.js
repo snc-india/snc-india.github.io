@@ -114,21 +114,21 @@
 
 	const PRODUCTS = [
 	{
-		title: "S-111 Tile Adhesive",
+		title: "S-555 Tile/Stone Adhesive",
 		subtitle: "Standard strength adhesive",
 		category: "adhesives",
 		image: "Images/use3.jpeg",
 		tags: ["Standard"],
 	},
 	{
-		title: "S-333 Tile Adhesive",
+		title: "S-111 Tile/Stone Adhesive",
 		subtitle: "Polymer modified adhesive",
 		category: "adhesives",
 		image: "Images/use2.jpeg",
 		tags: ["Premium"],
 	},
 	{
-		title: "S-555 Tile/Stone Adhesive",
+		title: "S-333 Tile/Stone Adhesive",
 		subtitle: "High strength bonding",
 		category: "adhesives",
 		image: "Images/use1.jpeg",
@@ -142,21 +142,21 @@
 		tags: ["Heavy Duty"],
 	},
 	{
-		title: "S-555 Tile/Stone Adhesive",
+		title: "TILES SPACER",
 		subtitle: "High strength bonding",
 		category: "adhesives",
 		image: "Images/type1.jpeg",
 		tags: ["Strong"],
 	},
 	{
-		title: "S-777 Tile/Slab Adhesive",
+		title: "CLIPS/WEDGES",
 		subtitle: "Heavy duty slab adhesive",
 		category: "adhesives",
 		image: "Images/type2.jpeg",
 		tags: ["Heavy Duty"],
 		},
 	{
-		title: "S-999 Tile/Slab Adhesive",
+		title: "TILE SPACER/LEVELING CLIPS WADGES",
 		subtitle: "Heavy duty slab adhesive",
 		category: "adhesives",
 		image: "Images/howto1.jpeg",
@@ -222,7 +222,12 @@
 		const subtitle = card.querySelector(".product-subtitle").innerText;
 		const img = card.querySelector("img").src;
 
-		modalImage.src = img;
+		modalTitle.textContent = title;
+		modalSubtitle.textContent = subtitle;
+
+		modalBullets.innerHTML = `
+			<li>High quality material</li>
+		`;
 		modalTitle.textContent = title;
 		modalSubtitle.textContent = subtitle;
 

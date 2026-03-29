@@ -49,10 +49,10 @@
                 </div>
                 <div class="hero-media reveal" aria-hidden="true">
                     <div class="hero-slider" id="heroSlider">
-                    <img src="Images/type1.jpeg" class="active" />
-                    <img src="Images/type2.jpeg" />
-                    <img src="Images/type3.jpeg" />
-                </div>
+                        <img src="Images/type1.jpeg" class="active" />
+                        <img src="Images/type2.jpeg" />
+                        <img src="Images/type3.jpeg" />
+                    </div>
                     <div class="hero-glow"></div>
                     <div class="hero-swoosh"></div>
                 </div>
@@ -159,14 +159,14 @@
                     </div>
                     <div class="how-visual card reveal">
 
-                    <div class="how-visual-overlay">
-                        <div class="pill">Premium Installation Guidance</div>
-                    </div>
+                        <div class="how-visual-overlay">
+                            <div class="pill">Premium Installation Guidance</div>
+                        </div>
 
-                   <div class="how-single-image">
-                    <img src="Images/howto4.jpeg" alt="How to Use Guide" />
-                </div>
-                </div>
+                        <div class="how-single-image">
+                            <img src="Images/howto4.jpeg" alt="How to Use Guide" />
+                        </div>
+                    </div>
                 </div>
             </div>
             </div>
@@ -208,7 +208,10 @@
                                 placeholder="Your mobile number" required /> </label> <label class="field"> <span
                                 class="field-label">Message</span> <textarea name="message" rows="5"
                                 placeholder="Which product do you need? Quantity? Location?"></textarea> </label>
-                        <button class="btn btn-primary w-100" type="submit">Send Enquiry</button>
+                        <button class="btn btn-primary w-100" type="button"
+                            onclick="window.open('https://whatsapp.com/channel/0029Vb7bAqM4dTnG8sLlyW1m', '_blank')">
+                            Send Enquiry
+                        </button>
                     </form>
                 </div>
             </div>
@@ -232,14 +235,7 @@
                 class="modal-close" type="button" aria-label="Close" data-close="true"> <span
                     aria-hidden="true">×</span> </button>
             <div class="modal-body">
-                <div class="modal-media"> <img id="modalImage" alt="" src="" /> </div>
-                <div class="modal-content">
-                    <h3 class="modal-title" id="modalTitle"></h3>
-                    <p class="modal-subtitle" id="modalSubtitle"></p>
-                    <ul class="modal-bullets" id="modalBullets"></ul>
-                    <div class="modal-actions"> <a class="btn btn-primary" href="#contact">Enquire Now</a> <button
-                            class="btn btn-ghost" type="button" data-close="true">Close</button> </div>
-                </div>
+                <img id="modalImage" class="modal-full-img" />
             </div>
         </div>
     </div>
