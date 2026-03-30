@@ -222,12 +222,7 @@
 		const subtitle = card.querySelector(".product-subtitle").innerText;
 		const img = card.querySelector("img").src;
 
-		modalTitle.textContent = title;
-		modalSubtitle.textContent = subtitle;
-
-		modalBullets.innerHTML = `
-			<li>High quality material</li>
-		`;
+		modalImage.src = img;
 		modalTitle.textContent = title;
 		modalSubtitle.textContent = subtitle;
 

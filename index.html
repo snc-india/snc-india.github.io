@@ -199,20 +199,28 @@
                             <div class="mini-logo">Bulk Supply</div>
                         </div>
                     </article>
-                    <form class="card reveal form-card" id="enquiryForm" autocomplete="on">
-                        <h3 class="card-title">Send a message</h3>
-                        <p class="card-text">This form opens your email app with a ready-to-send message.</p> <label
-                            class="field"> <span class="field-label">Name</span> <input name="name" type="text"
-                                placeholder="Your name" required /> </label> <label class="field"> <span
-                                class="field-label">Phone</span> <input name="phone" type="tel"
-                                placeholder="Your mobile number" required /> </label> <label class="field"> <span
-                                class="field-label">Message</span> <textarea name="message" rows="5"
-                                placeholder="Which product do you need? Quantity? Location?"></textarea> </label>
-                        <button class="btn btn-primary w-100" type="button"
-                            onclick="window.open('https://whatsapp.com/channel/0029Vb7bAqM4dTnG8sLlyW1m', '_blank')">
-                            Send Enquiry
-                        </button>
-                    </form>
+                    <div class="card reveal form-card">
+
+                        <h3 class="card-title">Connect on WhatsApp</h3>
+                        <p class="card-text">Chat directly for enquiries or join our group for updates & offers.</p>
+
+                        <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+
+                            <!-- DIRECT CHAT -->
+                            <button class="btn btn-primary w-100" type="button"
+                                onclick="window.open('https://wa.me/916352112727?text=Hi%20I%20want%20to%20know%20more%20about%20your%20product', '_blank')">
+                                💬 Chat on WhatsApp
+                            </button>
+
+                            <!-- GROUP LINK -->
+                            <button class="btn btn-ghost w-100" type="button"
+                                onclick="window.open('https://whatsapp.com/channel/0029Vb7bAqM4dTnG8sLlyW1m', '_blank')">
+                                📢 Join WhatsApp Updates
+                            </button>
+
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -235,10 +243,25 @@
                 class="modal-close" type="button" aria-label="Close" data-close="true"> <span
                     aria-hidden="true">×</span> </button>
             <div class="modal-body">
-                <img id="modalImage" class="modal-full-img" />
+                <div class="modal-media"> <img id="modalImage" alt="" src="" /> </div>
+                <div class="modal-content">
+                    <h3 class="modal-title" id="modalTitle"></h3>
+                    <p class="modal-subtitle" id="modalSubtitle"></p>
+                    <ul class="modal-bullets" id="modalBullets"></ul>
+                    <div class="modal-actions"> <a class="btn btn-primary" href="#contact">Enquire Now</a> <button
+                            class="btn btn-ghost" type="button" data-close="true">Close</button> </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <!-- wp button  -->
+    <!-- <a href="https://wa.me/916352112727?text=Hi%20I%20am%20interested%20in%20your%20tile%20adhesive%20products.%20Please%20share%20details."
+        class="whatsapp-float" target="_blank">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a> -->
     <script src="snc.js"></script>
 </body>
 
